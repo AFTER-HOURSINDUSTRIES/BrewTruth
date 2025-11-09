@@ -1,0 +1,90 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+
+
+
+<title>
+	BREW TRUTH
+</title><link rel="stylesheet" type="text/css" href="BREW_TRUTH_files/styles.css">
+<script language="javascript" type="text/javascript" src="BREW_TRUTH_files/scripts.js"></script>
+<script language="javascript" type="text/javascript" src="BREW_TRUTH_files/library.js"></script>
+<script language="javascript" type="text/javascript">
+var isthatanewbeer = '<embed name="isthatanewbeer" id="isthatanewbeer" width="1" height="1" type="audio/wav" src="wavs/isthatanewbeer.wav" hidden="true" autostart="true" loop="false"><\/embed>';
+var whatarewegoingtodo = '<embed name="whatarewegoingtodo" id="whatarewegoingtodo" width="1" height="1" type="audio/wav" src="wavs/whatarewegoingtodo.wav" hidden="true" autostart="true" loop="false"><\/embed>';
+var whatintheworld = '<embed name="whatintheworld" id="whatintheworld" width="1" height="1" type="audio/wav" src="wavs/whatintheworld.wav" hidden="true" autostart="true" loop="false"><\/embed>';
+var whydidyouleave = '<embed name="whydidyouleave" id="whydidyouleave" width="1" height="1" type="audio/wav" src="wavs/whydidyouleave.wav" hidden="true" autostart="true" loop="false"><\/embed>';
+var behindscenes = '<embed name="behindscenes" id="behindscenes" width="1" height="1" type="audio/wav" src="wavs/behindscenes.wav" hidden="true" autostart="true" loop="false"><\/embed>';
+
+// For playing audio
+function playIt(whichsound, a1, a2, a3, a4) {
+ if(OLloaded && OLgateOK && !OLns4){
+  var o=OLgetRef('audioDiv');
+  if (o) {
+   cClick();
+   o.innerHTML=(a1)?whichsound(a1, a2, a3, a4):whichsound;
+   o.style.visibility='visible';
+  }
+ }
+ return false;
+}
+
+// For stopping audio
+function stopIt() {
+ if(OLloaded && OLgateOK && !OLns4){
+  var o=OLgetRef('audioDiv');
+  if (o) {
+   o.innerHTML='';
+   o.style.visibility='hidden';
+  }
+ }
+ return false;
+}
+
+// For daisy-chaining with the core's cClick
+var cClickOld=cClick;
+
+function cClickNew(){
+ if(OLloaded && OLgateOK){
+  if(over && OLshowingsticky)stopIt();
+  cClickOld();
+ }
+ return false;
+}
+
+cClick=cClickNew;
+</script>
+</head><body>
+<div id="container">
+	<div id="leftContent"><img src="BREW_TRUTH_files/ege_glo_left_edge.jpg" alt="" height="948" width="40"></div>
+	<div id="middleContent">
+		<div><img src="BREW_TRUTH_files/bkg_glo_top.jpg" alt="" height="15" width="982"></div>
+		<div id="content">
+			<div><img src="BREW_TRUTH_files/hdr_0_0_masthead.jpg" alt="BREW TRUTH" height="177" width="784"></div>
+			<div>
+				<div><img src="BREW_TRUTH_files/img_0_0_box1.jpg" alt="" onmouseover="playIt(whatintheworld);" onmouseout="stopIt();" height="316" width="491"></div>
+				<div><a href="confused.html"><img src="BREW_TRUTH_files/img_0_0_box2.jpg" alt="" onmouseover="playIt(whydidyouleave);" onmouseout="stopIt();" height="316" width="293"></a></div>
+			</div>
+			<div><a href="behind_scenes.html"><img src="BREW_TRUTH_files/img_0_0_box3.jpg" alt="" onmouseover="playIt(behindscenes);" onmouseout="stopIt();" height="122" width="784"></a></div>
+			<div><a href="silver_train.html"><img src="BREW_TRUTH_files/img_0_0_box4.jpg" alt="" onmouseover="playIt(whatarewegoingtodo);" onmouseout="stopIt();" height="318" width="290"></a><a href="innovation.html"><img src="BREW_TRUTH_files/img_0_0_box5.jpg" alt="" onmouseover="playIt(isthatanewbeer);" onmouseout="stopIt();" height="318" width="494"></a></div>
+		</div>
+		<div id="promos">
+			<div><a href="javascript:void(0);" onclick="openPiss();"><img src="BREW_TRUTH_files/img_0_0_box6.gif" alt="" height="300" width="198"></a></div>
+			<div><a href="http://www.budlight.com/" target="_blank"><img src="BREW_TRUTH_files/img_0_0_box7.jpg" alt="" height="633" width="198"></a></div>
+		</div>
+	</div>
+	<div id="rightContent"><img src="BREW_TRUTH_files/ege_glo_right_edge.jpg" alt="" height="948" width="40"></div>
+	<div id="bottomContent"><img src="BREW_TRUTH_files/ege_glo_bottom_edge.jpg" alt="" height="40" width="1062"></div>
+	
+	<div style="position: absolute; z-index: 999; top: 28px; left: 159px; float: none;"><img src="BREW_TRUTH_files/hdr_0_0_masthead.gif" alt="" height="142" width="311"><img src="BREW_TRUTH_files/hdr_0_0_masthead_animation2.gif" alt="" height="144" width="239"></div>
+	<div style="position: absolute; z-index: 999; top: 455px; left: 106px; float: none;"><a href="common_sense.html"><img src="BREW_TRUTH_files/btn_glo_common_sense_off.png" alt="THE END OF COMMON SENSE?" style="margin-right: 23px;" id="btn_glo_common_sense" height="35" width="211"></a><a href="uniform.html"><img src="BREW_TRUTH_files/btn_glo_left_uniform_off.png" alt="NEW UNIFORM?" id="btn_glo_left_uniform" height="35" width="132"></a></div>
+	<div style="position: absolute; z-index: 999; top: 455px; left: 546px; float: none;"><a href="confused.html"><img src="BREW_TRUTH_files/btn_glo_confused_off.png" alt="CONFUSED AND FURIOUS!" id="btn_glo_confused" height="35" width="184"></a></div>
+	<div style="position: absolute; z-index: 999; top: 888px; left: 92px; float: none;"><a href="silver_train.html"><img src="BREW_TRUTH_files/btn_glo_silver_train_off.png" alt="NO MORE SILVER TRAIN?" id="btn_glo_silver_train" height="35" width="184"></a></div>
+	<div style="position: absolute; z-index: 99; top: 517px; left: 308px; float: none;"><a href="behind_scenes.html"><img src="BREW_TRUTH_files/img_0_0_box3.gif" alt="" onmouseover="playIt(behindscenes);" onmouseout="stopIt();" height="105" width="172"></a></div>
+	<div style="position: absolute; z-index: 999; top: 601px; left: 297px; float: none;"><a href="behind_scenes.html"><img src="BREW_TRUTH_files/btn_glo_behind_scenes_off.png" alt="BEHIND THE SCENES VIDEO!" id="btn_glo_behind_scenes" height="35" width="191"></a></div>
+	<div style="position: absolute; z-index: 999; top: 888px; left: 364px; float: none;"><a href="innovation.html"><img src="BREW_TRUTH_files/btn_glo_innovation_off.png" alt="INNOVATION?...OR RELOCATION?" id="btn_glo_innovation" height="35" width="231"></a></div>
+</div>
+
+<div id="audioDiv" style="position: absolute; visibility: hidden; z-index: 0;"></div>
+</body></html>
