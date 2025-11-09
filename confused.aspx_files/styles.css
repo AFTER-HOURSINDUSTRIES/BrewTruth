@@ -1,0 +1,119 @@
+﻿*
+{
+    margin:0;
+    padding:0;
+}
+
+body
+{
+    margin:0;
+    background:#fff;
+    text-align:center;
+}
+
+img
+{
+	behavior:url("pngbehavior.htc");
+	border:0;
+}
+
+#container
+{
+    margin:0 auto;
+    text-align:left;
+    width:1062px;
+    position:relative;
+    clear:left;
+    z-index:9;
+}
+
+#container div
+{
+    float:left;
+    z-index:99;
+}
+
+#leftContent
+{
+    width:40px;
+    float:left;
+    position:absolute;
+    top:0;
+    left:0;
+}
+
+#middleContent
+{
+    width:982px;
+    float:left;
+    position:absolute;
+    top:0;
+    left:40px;
+}
+
+#content
+{
+    width:784px;
+    float:left;
+    position:absolute;
+    top:15px;
+    left:0px;
+    float:none;
+    clear:both;
+}
+
+#promos
+{
+    width:198px;
+    float:left;
+    position:absolute;
+    top:15px;
+    left:784px;
+}
+
+#rightContent
+{
+    width:40px;
+    float:left;
+    position:absolute;
+    top:0;
+    left:1022px;
+}
+
+#templateContent
+{
+    width:779px;
+    float:left;
+    position:absolute;
+    top:15px;
+    left:0;
+    float:none;
+    clear:both;
+}
+
+#videoPlayer
+{
+    position:absolute;
+    z-index:999;
+    top:107px;
+    left:46px;
+    float:none;
+}
+
+#templatePromos
+{
+    width:203px;
+    float:left;
+    position:absolute;
+    top:15px;
+    left:779px;
+}
+
+#bottomContent
+{
+    width:1062px;
+    float:left;
+    position:absolute;
+    top:948px;
+    left:0;
+}
